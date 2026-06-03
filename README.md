@@ -4,6 +4,10 @@ This project consists of building a machine learning model capable of classifyin
 
 The development of the project follows the main stages of building a machine learning model: dataset selection, preprocessing, data splitting, model training, validation, tuning, prediction, and performance evaluation.
 
+## Documentation
+
+https://canva.link/9a0thxkqfbbz7xl
+
 ## How to Run
 
 This project was developed in **Google Colab**. The dataset is not included directly in this repository due to the size of the images.
