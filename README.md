@@ -1,12 +1,8 @@
 # Project Description
 
-This project consists of building a machine learning model capable of classifying images of poker cards. The final objective is for the model to identify which class a card belongs to among a total of **53 classes**.
+This project consists of building a machine learning model capable of classifying images of poker cards. The main objective is for the model to identify which class a card belongs to among a total of **53 classes**.
 
 The development of the project follows the main stages of building a machine learning model: dataset selection, preprocessing, data splitting, model training, validation, tuning, prediction, and performance evaluation.
-
-## Documentation
-
-https://canva.link/9a0thxkqfbbz7xl
 
 ## How to Run
 
@@ -14,7 +10,7 @@ This project was developed in **Google Colab**. The dataset is not included dire
 
 To run the notebook:
 
-1. Clone this repository or upload the final notebook in Google Colab.
+1. Upload the final notebook to Google Colab.
 
 2. Create a folder in Google Drive using the following structure:
 
@@ -27,7 +23,7 @@ MyDrive/
       ...
 ```
 
-The INPUT_DATASET folder can be accessed through the following link:
+The `INPUT_DATASET` folder can be accessed through the following link:
 
 https://drive.google.com/drive/folders/1E7JMPggN6xA4cX9pXNVYd0WJR4ZT4VnH?usp=sharing
 
@@ -43,7 +39,7 @@ CARDS_DATASET = BASE_DIR / "CARDS_DATASET"
 
 **Note:**
 
-The notebook will automatically generate the CARDS_DATASET folder with the following structure:
+The notebook will automatically generate the `CARDS_DATASET` folder with the following structure:
 
 ```text
 CARDS_DATASET/
@@ -52,11 +48,12 @@ CARDS_DATASET/
   test/
 ```
 
-If you experience long epoch times during training because the images are being loaded directly from Google Drive, you can upload or extract the CARDS_DATASET folder into Google Colab’s local runtime environment.
+If you experience long epoch times during training because the images are being loaded directly from Google Drive, you can upload or extract the `CARDS_DATASET` folder into Google Colab’s local runtime environment.
 
-After uploading or extracting the dataset locally, you can set:
+If the compressed dataset file has been uploaded to `/content/`, it can be extracted using:
 
 ```python
+!unzip -q /content/CARDS_DATASET-20260530T235332Z-3-001.zip -d /content/
 LOCAL_DATASET = Path("/content/CARDS_DATASET")
 ```
 
@@ -74,7 +71,8 @@ During the development of this project, artificial intelligence was used as a su
 
 - Support in structuring the dataset splitting code.
 - Evaluation of the code and identification of good practices, such as cleaning the output folder before copying files, using a fixed random seed for reproducibility, and organizing Keras callbacks.
-- Clarification of questions about Python libraries such as `pathlib`, `shutil`, `random`, `pandas`, and TensorFlow/Keras
-- Assistance in refining, grammar-checking, and translating technical documentation.
+- Clarification of questions about Python libraries such as `pathlib`, `shutil`, `random`, `pandas`, and TensorFlow/Keras.
+- Assistance in refining and grammar-checking technical documentation.
+- Assistance in creating model diagrams.
 
 AI was used as a support and guidance tool during the development of the project. However, the final decisions were made based on the criteria covered in class, dataset analysis, and computer vision principles, including the use of 118 images per class, the dataset split, the balancing method, the dropout rate, and the layers selected for fine-tuning.
